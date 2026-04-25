@@ -1,11 +1,11 @@
-﻿{
+{
   "Version": "2012-10-17",
   "Statement": [
     {
       "Sid": "GitHubActionsOIDCTrust",
       "Effect": "Allow",
       "Principal": {
-        "Federated": "arn:aws:iam::<AWS_ACCOUNT_ID>:oidc-provider/token.actions.githubusercontent.com"
+        "Federated": "arn:aws:iam::656853518062:oidc-provider/token.actions.githubusercontent.com"
       },
       "Action": "sts:AssumeRoleWithWebIdentity",
       "Condition": {
@@ -13,7 +13,7 @@
           "token.actions.githubusercontent.com:aud": "sts.amazonaws.com"
         },
         "StringLike": {
-          "token.actions.githubusercontent.com:sub": "repo:<OWNER>/<REPO>:environment:production"
+          "token.actions.githubusercontent.com:sub": "repo:shayankhurram1/ecs_deployment_class:environment:production"
         }
       }
     }
