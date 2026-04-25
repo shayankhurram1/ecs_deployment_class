@@ -1,6 +1,6 @@
 aws_region          = "us-east-1"
 project_name        = "ecs-commerce-demo"
-db_password         = "ChangeMe123!"
+db_password         = "SuperSecretDbPass123!"
 image_tag           = "v1"
 deploy_ecs_services = false
 cloud_map_namespace = "commerce.local"
